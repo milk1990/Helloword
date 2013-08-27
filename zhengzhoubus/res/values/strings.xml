@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">郑州公交</string>
+    <string name="about">关于</string>
+    
+    <string name="menu_share">分享</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_score">好评</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_refresh">刷新</string>
+    
+    <string name="share_content">郑州公交查询，可以查询200余条公交线路的实时运行信息，下载地址：http://play.google.com/store/apps/details?id=</string>
+    <string name="app_version">版本: </string>
+    <string name="app_version_test">版本：V 1.5</string>
+    <string name="weibo">"@程辉_feicien"</string>
+    <string name="qq">200938337</string>
+    <string name="about_tip_1">如有疑问和需求,欢迎来QQ群一起交流。\n欢迎到应用市场给本软件评分。</string>
+    <string name="search_label">郑州公交</string>
+    <string name="search_hint">请输入公交线路</string>
+    
+    <string name="search_instructions">点击图标开始查询</string>
+    <string name="search_results">你搜索的是:\"%1$s\",有%2$d条结果: </string>
+
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    
+    <string name="no_favorite_data">目前共提供郑州市254条公交线路的GPS实时查询功能，点击搜索图标开始查询</string>
+    
+    <string name="gps_info_3">第三班</string>
+    
+    <string name="gps_info_2">第二班</string>
+    
+    <string name="gps_info_1">下一班</string>
+    
+    <string name="sno">19</string>
+    
+    <string name="station_name">XXX站</string>
+    
+    <string name="wait_station">候车站点：</string>
+    
+    <string name="bus_name">97路</string>
+    
+    <string name="no_gps_info">没有车辆信息</string>
+    <string name="activity_gps_info">GPS候车车辆信息</string>
+
+</resources>
