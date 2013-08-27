@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_ll"
+    android:visibility="gone"
+    android:orientation="horizontal" >
+        <TextView android:layout_width="fill_parent" android:layout_height="40dp" android:gravity="center" android:text="暂无数据      menu添加"/>
+    </LinearLayout>
+    <com.example.mystructs.app.book.PullDownView
+        android:id="@+id/pull_down_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" >
+    </com.example.mystructs.app.book.PullDownView>
+
+  
+</LinearLayout>

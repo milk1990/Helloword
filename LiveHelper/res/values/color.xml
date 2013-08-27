@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#ff00ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background">#555555</color>
+    <color name="orange">#d84a2e</color>
+    <color name="driver">#b0b8d7</color>
+    <color name="action_driver">#ffffff</color>
+    <color name="blue">#163a8e</color>
+    
+</resources>

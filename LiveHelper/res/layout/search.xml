@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:paddingTop="3dp" android:paddingBottom="3dp"   android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+        <CheckBox android:id="@+id/search_numberflag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_default" android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <RadioGroup android:id="@+id/search_number_group" android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/search_number_group_lone" android:layout_marginLeft="10dp" android:textSize="@dimen/bigger"  android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_number_1" android:layout_weight="1"/>
+            <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+            <RadioButton android:id="@+id/search_number_group_more" android:layout_marginLeft="10dp" android:textSize="@dimen/bigger" android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_number_2" android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_marginTop="3dp" android:layout_marginBottom="3dp"  android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <CheckBox android:id="@+id/search_titlerflag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_default" android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <TextView  android:gravity="center" android:textSize="@dimen/bigger" android:layout_width="60dp" android:layout_height="fill_parent" android:text="@string/search_title"/>
+        <EditText android:id="@+id/search_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/edittextbackground" android:hint="模糊查询"/>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <CheckBox android:id="@+id/search_moneyflag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_default" android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <TextView  android:gravity="center" android:textSize="@dimen/bigger" android:layout_width="60dp" android:layout_height="fill_parent" android:text="@string/search_money"/>
+        <EditText android:id="@+id/search_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/edittextbackground" android:hint="模糊查询"/>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:gravity="center" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"  android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <CheckBox android:id="@+id/search_dateflag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_default" android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+             <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal">
+                  <TextView android:layout_marginLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="起止日期:"/>
+                  <TextView android:id="@+id/search_date_from" android:layout_width="wrap_content" android:layout_height="30dp" android:minWidth="100dp" android:background="@drawable/text_light" android:gravity="center" android:textSize="@dimen/small_nomal" android:textStyle="bold" android:text="默认为空"/>
+                  <ImageView  android:id="@+id/search_date_bt" android:contentDescription="日期" android:clickable="true" android:layout_marginLeft="3dp" android:layout_width="30dp" android:layout_height="40dp" android:src="@drawable/date_bg"/>
+             </LinearLayout>
+             <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                  <TextView android:layout_marginLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="截止日期:"/>
+                  <TextView android:id="@+id/search_date_to" android:layout_width="wrap_content" android:layout_height="30dp"  android:minWidth="100dp" android:background="@drawable/text_light" android:gravity="center" android:textSize="@dimen/small_nomal" android:textStyle="bold" android:text="默认为空/当前"/>
+                  <ImageView android:id="@+id/search_date_bt2" android:contentDescription="日期"  android:clickable="true" android:layout_marginLeft="3dp" android:layout_width="30dp" android:layout_height="40dp" android:src="@drawable/date_bg"/>
+             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_width="fill_parent" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_height="wrap_content" android:orientation="horizontal">
+        <CheckBox android:id="@+id/search_specialflag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_default" android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <TextView android:layout_marginLeft="5dp"   android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/special"/>
+        <RadioGroup android:id="@+id/search_special_group" android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/search_special_group_yes" android:layout_marginLeft="10dp"  android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是" android:layout_weight="1"/>
+            <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+            <RadioButton android:id="@+id/search_special_group_no" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="否" android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_width="fill_parent" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_height="wrap_content" android:orientation="horizontal">
+        <CheckBox android:id="@+id/search_accountflag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_default" android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <TextView  android:layout_marginLeft="5dp"  android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account"/>
+        <RadioGroup android:id="@+id/search_account_group" android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/search_account_group_yes" android:layout_marginLeft="10dp"  android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是" android:layout_weight="1"/>
+            <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+            <RadioButton android:id="@+id/search_account_group_no" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="否" android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    
+</LinearLayout>

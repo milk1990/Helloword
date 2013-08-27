@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mystructs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/my_theme" >
+        <provider
+            android:name=".util.provider.DataProvider"
+            android:authorities="com.example.mystructs.util.provider.DataProvider" >
+        </provider>
+
+        <activity
+            android:name="com.example.mystructs.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.mystructs.app.book.BookActivity"></activity>
+        <activity android:name="com.example.mystructs.app.book.BookAccountActivity" 
+                  android:parentActivityName="com.example.mystructs.app.book.BookActivity"></activity>
+        
+        <activity android:name="com.example.mystructs.app.cart.CartActivity"></activity>
+        <activity android:name="com.example.mystructs.app.cart.CartAddActivity"></activity>
+        
+        <activity android:name="com.example.mystructs.app.coin.CoinActivity"></activity>
+        <activity android:name="com.example.mystructs.app.coin.CoinAddActivity"></activity>
+
+        <activity android:name="com.example.mystructs.app.file.FileActivity"></activity>
+        <activity android:name="com.example.mystructs.app.file.FileDetailActivity"></activity>
+        <activity android:name="com.example.mystructs.app.file.ItemDetailActivity"></activity>
+        
+    </application>
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 
+</manifest>

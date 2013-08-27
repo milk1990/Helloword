@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+    <ImageView android:layout_width="wrap_content" android:contentDescription="账单" android:layout_height="wrap_content" android:src="@drawable/file"/>
+    <TextView android:id="@+id/file_item_id" android:textColor="@color/red" android:textSize="@dimen/nomal" android:gravity="center" android:layout_width="25dp" android:layout_height="wrap_content" android:text="01"/>
+    <TextView android:id="@+id/file_item_titler" android:layout_width="0dp" android:textSize="@dimen/big" android:layout_height="wrap_content" android:text="adafa" android:layout_weight="1"/>
+    <TextView android:id="@+id/file_item_date" android:layout_width="wrap_content" android:textSize="@dimen/small_nomal" android:layout_height="wrap_content" android:text="2013-08-31 12:32:12"/>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:paddingTop="3dp" android:paddingBottom="3dp"   android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+        <TextView  android:gravity="center" android:layout_width="80dp" android:layout_height="fill_parent"  android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <TextView  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_number_1" android:layout_weight="1"/>
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <TextView  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_number_2" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_marginTop="3dp" android:layout_marginBottom="3dp"  android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:text="一般消费" android:gravity="center" android:layout_width="80dp" android:layout_height="fill_parent"  android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:layout_weight="1">
+           <TextView android:id="@+id/consump_nomal_lone"  android:hint="0"  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+           <TextView android:id="@+id/consump_nomal_more" android:hint="0"  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_marginRight="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:text="特殊消费" android:gravity="center" android:layout_width="80dp" android:layout_height="fill_parent"  android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+           <TextView android:id="@+id/consump_special_lone"  android:hint="0"  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1"/>
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+           <TextView android:id="@+id/consump_special_more" android:hint="0"  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1"/>
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_width="fill_parent" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_marginRight="10dp" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:text="已结算消费" android:gravity="center" android:layout_width="80dp" android:layout_height="fill_parent"  android:textColor="@color/blue" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+           <TextView android:id="@+id/consump_account_lone"  android:hint="0"  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1"/>
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+           <TextView android:id="@+id/consump_account_more" android:hint="0" android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1"/>
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:layout_width="fill_parent" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_marginRight="10dp" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:text="总计" android:gravity="center" android:layout_width="80dp" android:layout_height="fill_parent"  android:textColor="@color/red" />
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+           <TextView android:id="@+id/consump_count_lone" android:hint="0"  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1"/>
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="@color/driver"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+           <TextView android:id="@+id/consump_count_more" android:hint="0"  android:gravity="center"  android:textSize="@dimen/bigger"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_weight="1"/>
+           <TextView android:gravity="center"  android:layout_width="wrap_content" android:text="元" android:layout_height="wrap_content"/>
+         </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="@drawable/driver"/>
+    <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal">
+        <Button android:id="@+id/consump_bt_cancel" android:layout_width="0dp" android:textSize="@dimen/nomal" android:text="取消" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/consump_bt_change" android:layout_width="0dp" android:textSize="@dimen/nomal" android:text="标签修改" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/consump_bt_save" android:layout_width="0dp" android:textSize="@dimen/nomal" android:text="保存账单" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
